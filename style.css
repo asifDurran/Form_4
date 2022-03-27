@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: linear-gradient(45deg, greenyellow, dodgerblue);
+  font-family: "Sansita Swashed", cursive;
+}
+
+.form {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form-item {
+  position: relative;
+  background-color: white;
+  width: 25%;
+  border-radius: 10px;
+  padding: 20px;
+}
+.form-group {
+  margin-bottom: 20px;
+  position: relative;
+  background-color: red;
+}
+.form-control {
+  width: 100%;
+  position: relative;
+  font-size: 14px;
+  text-transform: capitalize;
+  padding: 16px 20px;
+  border: black 2px solid;
+  border-radius: 10px;
+}
+
+span {
+  position: absolute;
+  top: 25%;
+  left: 14px;
+}
+/* .form-control:focus span,
+.form-control:valid span {
+  transform: translateX(-13px) translateY(-35px);
+  font-size: 1em;
+  color: red;
+} */
+.form .form-item .form-group .form-control:focus ~ span,
+.form .form-item .form-group .form-control:valid ~ span {
+  transform: translateX(-13px) translateY(-35px);
+  font-size: 1em;
+}
+
+.form-control:focus {
+  outline: none;
+}
+.form-control::placeholder {
+  color: black;
+  text-transform: capitalize;
+}
+.title {
+  margin-top: 30px;
+  margin-bottom: 60px;
+  border-left: 5px solid dodgerblue;
+  font-weight: bold;
+  font-size: 2em;
+  padding: 1rem;
+  letter-spacing: 5px;
+  color: black;
+  text-transform: capitalize;
+}
+.btn {
+  margin-bottom: 45px;
+  padding: 16px 55px;
+  background-color: #1f90ff;
+}
+.btn-primary {
+  border-radius: 10px;
+  color: white;
+  border: none;
+  font-size: 16px;
+}
